@@ -59,6 +59,7 @@ const InquiryForm = () => {
             margin: "10px 0",
             borderRadius: "5px",
             border: "1px solid gray",
+            background : 'black',
           }}
         />
         <input
@@ -72,6 +73,7 @@ const InquiryForm = () => {
             margin: "10px 0",
             borderRadius: "5px",
             border: "1px solid gray",
+            background : 'black',
           }}
         />
         {/* <input
