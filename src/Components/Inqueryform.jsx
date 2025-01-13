@@ -3,25 +3,16 @@ import React, { useState } from "react";
 const InquiryForm = () => {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
-  const [address, setAddress] = useState("");
-  const [city, setCity] = useState("");
-  const [district, setDistrict] = useState("");
-  const [pinCode, setPinCode] = useState("");
-
   const handleSubmit = (e) => {
     e.preventDefault();
 
     // Validate all fields
     if (
       name.trim() &&
-      phone.trim() &&
-      address.trim() &&
-      city.trim() &&
-      district.trim() &&
-      pinCode.trim()
+      phone.trim()
     ) {
-      const message = `नाम: ${name}%0Aफोन नंबर: ${phone}%0Aपता: ${address}, ${city}, ${district} - ${pinCode}`;
-      const whatsappURL = `https://wa.me/6395142354?text=${message}`;
+      const message = `नाम: ${name}%0Aफोन नंबर: ${phone}`;
+      const whatsappURL = `https://wa.me/8194034927?text=${message}`;
       window.open(whatsappURL, "_blank");
     } else {
       alert("कृपया सभी फ़ील्ड भरें।");
