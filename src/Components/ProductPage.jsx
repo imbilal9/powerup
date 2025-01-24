@@ -1,6 +1,6 @@
 import React from "react";
 import productImage from "../assets/medicine2.jpg"; 
-import babaVideo from "../assets/babaVideos.mp4"
+import babaVideos from "../assets/babaVideos.mp4"
 import { useNavigate } from "react-router-dom";
 
 const ProductPage = () => {
@@ -18,7 +18,7 @@ const ProductPage = () => {
     <div className="lg:w-4/5 mx-auto flex flex-wrap">
 <video
   className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
-  src={babaVideo}
+  src={babaVideos}
   autoPlay
   loop
   controls
