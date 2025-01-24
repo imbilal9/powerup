@@ -1,6 +1,6 @@
 import React from "react";
 import productImage from "../assets/medicine2.jpg"; 
-import babaVideos from "../assets/babaVideos.mp4"
+import babaVideos from "../assets/babaVideo2.mp4"
 import { useNavigate } from "react-router-dom";
 import ReactPlayer from "react-player";
 
