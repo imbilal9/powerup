@@ -1,6 +1,6 @@
 import React from "react";
 import productImage from "../assets/medicine2.jpg"; 
-import babaVideo from "../assets/babaVideo.mp4"
+import babaVideo from "../assets/babaVideos.mp4"
 import { useNavigate } from "react-router-dom";
 
 const ProductPage = () => {
