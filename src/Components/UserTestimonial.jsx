@@ -33,21 +33,21 @@ const UserTestimonial = () => {
   ];
 
   return (
-    <div className="testimonial-container grid grid-cols-1 md:grid-cols-2 gap-6 p-8">
+    <div className="testimonial-container grid grid-cols-1 gap-6 px-4 py-8 md:grid-cols-2">
       {testimonials.map((testimonial, index) => (
         <div
           key={index}
-          className="testimonial-box flex items-center gap-4 p-4 border rounded-lg shadow-lg"
+          className="testimonial-box flex flex-col items-center text-center p-6 border rounded-lg shadow-lg bg-white"
         >
           <img
             src={testimonial.imageUrl}
             alt={testimonial.name}
-            className="w-24 h-24 rounded-full"
+            className="w-20 h-20 md:w-24 md:h-24 rounded-full mb-4 border border-gray-300"
           />
-          <div>
-            <h3 className="text-lg font-bold mb-2">{testimonial.name}</h3>
-            <p className="text-sm text-gray-700">{testimonial.quote}</p>
-          </div>
+          <h3 className="text-lg font-bold mb-2 text-gray-800">{testimonial.name}</h3>
+          <p className="text-sm text-gray-700 leading-relaxed">
+            {testimonial.quote}
+          </p>
         </div>
       ))}
     </div>
