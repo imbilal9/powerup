@@ -2,6 +2,7 @@ import React from "react";
 import productImage from "../assets/medicine2.jpg"; 
 import babaVideos from "../assets/babaVideos.mp4"
 import { useNavigate } from "react-router-dom";
+import ReactPlayer from "react-player";
 
 const ProductPage = () => {
 
@@ -16,16 +17,16 @@ const ProductPage = () => {
     <section className="text-gray-600 body-font overflow-hidden">
   <div className="container px-5 py-24 mx-auto">
     <div className="lg:w-4/5 mx-auto flex flex-wrap">
-<video
-  className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
-  src={babaVideos}
-  autoPlay
-  loop
-  controls
-  muted
->
-  Your browser does not support the video tag.
-</video>
+<ReactPlayer
+              className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
+              url={babaVideos}
+              playing
+              loop
+              controls
+              muted
+              width="100%"
+              height="100%"
+            />
       <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
         <h2 className="text-sm title-font text-gray-500 tracking-widest">ROHANI DAWAKHANA</h2>
         <h1 className="text-gray-900 text-3xl title-font font-medium mb-1">MEN POWER PRODUCT</h1>
