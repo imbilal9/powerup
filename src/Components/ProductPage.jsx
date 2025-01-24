@@ -1,6 +1,6 @@
 import React from "react";
 import productImage from "../assets/medicine2.jpg"; 
-import babaVideos from "../assets/babaVideo2.mp4"
+import babaVideo2 from "../assets/babaVideo2.mp4"
 import { useNavigate } from "react-router-dom";
 import ReactPlayer from "react-player";
 
@@ -19,7 +19,7 @@ const ProductPage = () => {
     <div className="lg:w-4/5 mx-auto flex flex-wrap">
 <ReactPlayer
               className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
-              url={babaVideos}
+              url={babaVideo2}
               playing
               loop
               controls
