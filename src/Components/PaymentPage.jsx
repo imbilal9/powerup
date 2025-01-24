@@ -25,7 +25,7 @@ const PaymentPage = () => {
       setTimeout(() => {
         alert("Payment successful! Redirecting to the form...");
         navigate('/form'); // Replace '/form' with your actual route for the form page
-      }, 50000); // Adjust the delay as needed
+      }, 30000); // Adjust the delay as needed
     } else {
       alert("Payment method not supported.");
     }
