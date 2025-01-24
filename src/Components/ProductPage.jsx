@@ -22,7 +22,7 @@ const ProductPage = () => {
               url={babaVideo2}
               playing
               loop
-              controls
+              controls={true}
               muted
               width="100%"
               height="100%"
